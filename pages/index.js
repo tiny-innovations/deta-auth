@@ -31,7 +31,8 @@ export default function Home() {
                 <div className={styles.center}>
                     <h1 className={inter.className}>Deta Auth, by Sourfruit</h1>
                 </div>
-                <a className={styles.button} href="https://www.npmjs.com/package/deta-auth">View on NPM</a>
+                <a style={{marginBottom: '20px'}} className={styles.button} href="https://www.npmjs.com/package/deta-auth">View on NPM</a>
+                <a className={styles.button} href="https://github.com/tiny-innovations/deta-auth">View on GitHub</a>
 
                 <div className={styles.grid}>
                     <h4 className={inter.className}>
