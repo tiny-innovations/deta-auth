@@ -4,20 +4,29 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
+import Switch from "react-switch";
+
 import useAuthState from 'deta-auth'
 import { useEffect, useState } from 'react';
 
 export default function Home() {
     const [security, setSecurity] = useState('secure')
+    const [isChecked, setCheck] = useState(true)
 
     const { auth, loading, error } = useAuthState(`/api/${security}`)
 
     function switchSecurity() {
+        console.log('Switching...')
         if (security == 'secure') {
             setSecurity('unsecure')
         } else {
             setSecurity('secure')
         }
+    }
+
+    function handleChange() {
+        setCheck(!isChecked)
+        switchSecurity()
     }
 
     return (
@@ -35,11 +44,11 @@ export default function Home() {
                 <a className={styles.button} href="https://github.com/tiny-innovations/deta-auth">View on GitHub</a>
 
                 <div className={styles.grid}>
-                    <h4 className={inter.className}>
-                        Demo of <i>/api/{security}</i>
+                    <h3 className={inter.className}>
+                        <i>/api/{security}</i>
                         <br/><br/>
-                        <a style={{cursor: 'pointer'}} onClick={() => {switchSecurity()}}><u>Switch</u></a>
-                    </h4><br/>
+                        <Switch onChange={handleChange} checked={isChecked} />
+                    </h3><br/>
 
                     <a className={styles.card}>
                         <h2 className={inter.className}>
