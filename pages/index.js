@@ -44,7 +44,7 @@ export default function Home() {
                         Verify authentication state in a Deta Space app, among other things.
                     </p>
                 </div>
-                <div style={{display: 'flex', marginTop: '-60px'}}>
+                <div style={{display: 'flex', marginTop: ''}}>
                     <a style={{marginBottom: '20px'}} className={styles.button} href="https://www.npmjs.com/package/deta-auth">View on NPM</a>
                     <a className={styles.button} href="https://github.com/tiny-innovations/deta-auth">View on GitHub</a>
                 </div>
