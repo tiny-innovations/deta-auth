@@ -1,5 +1,4 @@
 # Deta Auth
-### by Sourfruit
 
 <p align='center'>
     <img display="inline-block" src="https://img.shields.io/npm/v/deta-auth?style=for-the-badge" /> <img display="inline-block"  src="https://img.shields.io/bundlephobia/minzip/deta-auth?style=for-the-badge" /> <img display="inline-block" src="https://img.shields.io/badge/Made%20with-JavaScript-yellow?style=for-the-badge" />
