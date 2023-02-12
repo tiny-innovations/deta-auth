@@ -5,12 +5,12 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 import useAuthState from 'deta-auth'
-import { use, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
     const [security, setSecurity] = useState('secure')
 
-    const { auth, loading, error } = useAuthState(`http://localhost:3000/api/${security}`)
+    const { auth, loading, error } = useAuthState(`/api/${security}`)
 
     function switchSecurity() {
         if (security == 'secure') {
@@ -60,7 +60,7 @@ export default function Home() {
 
                     <a className={styles.card}>
                         <h2 className={inter.className}>
-                            {error ? "Error" : "No error"}
+                            {error ? "Errored" : "No error"}
                         </h2>
                         <p className={inter.className}>
                             useAuthState (Deta Auth) returns an error object, notifying you if there was an error encountered when requesting state.
@@ -75,10 +75,6 @@ export default function Home() {
                             useAuthState (Deta Auth) returns an auth object, including auth.url which allows you to quickly get the custom Space subdomain a user was assigned.
                         </p>
                     </a>
-
-
-             
-
                 </div>
             </main>
         </>
