@@ -95,6 +95,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center !important;
     position: relative;
     padding: 4rem 0;
 }
