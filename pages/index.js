@@ -39,15 +39,19 @@ export default function Home() {
             <main className={styles.main}>
                 <div className={styles.center}>
                     <h1 className={inter.className}>Deta Auth, by Sourfruit</h1>
+                    <br/><br/>
+                    <p className={styles.description}>
+                        Verify authentication state in a Deta Space app, among other things.
+                    </p>
                 </div>
-                <div style={{display: 'flex'}}>
+                <div style={{display: 'flex', marginTop: '-60px'}}>
                     <a style={{marginBottom: '20px'}} className={styles.button} href="https://www.npmjs.com/package/deta-auth">View on NPM</a>
                     <a className={styles.button} href="https://github.com/tiny-innovations/deta-auth">View on GitHub</a>
                 </div>
         
                 <div className={styles.grid}>
                     <h3 className={inter.className}>
-                        <i>/api/{security}</i>
+                        /api/{security}
                         <br/><br/>
                         <Switch onChange={handleChange} checked={isChecked} />
                     </h3><br/>
