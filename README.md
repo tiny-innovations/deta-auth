@@ -3,6 +3,9 @@
 <p align='center'>
     <img display="inline-block" src="https://img.shields.io/npm/v/deta-auth?style=for-the-badge" /> <img display="inline-block"  src="https://img.shields.io/bundlephobia/minzip/deta-auth?style=for-the-badge" /> <img display="inline-block" src="https://img.shields.io/badge/Made%20with-JavaScript-yellow?style=for-the-badge" />
 
+### 🔗 [Live Demo (secure/unsecure)](https://deta-auth.bysourfruit.com)
+### 🔗 [NPM](https://www.npmjs.com/package/deta-auth?activeTab=readme)
+
 As of February 2023, Deta Space has no native way to provide Space apps with certain information, such as:
 
 - Authentication state
